@@ -1,0 +1,18 @@
+int inPin = 3; 
+int var = 0;
+int pin11 = 5;
+
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+  var = analogRead(inPin);
+  if(var >= 1){
+    var = constrain(var, 1, 100;                        
+    var = map(var, 1, 100, 1, 255);
+    analogWrite(pin11, var);
+   }else{
+       analogWrite(pin11, 0);                     
+  }
+ Serial.println(var);
+}
